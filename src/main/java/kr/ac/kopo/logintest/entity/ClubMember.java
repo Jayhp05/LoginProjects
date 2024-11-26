@@ -22,7 +22,7 @@ public class ClubMember extends BaseEntity{
 
     private String name;
 
-    private String fromSocial;
+    private boolean fromSocial;
 
     @ElementCollection
     @Builder.Default

@@ -31,7 +31,7 @@ public class ClubMemberTests {
                     .email("user" + i + "@kopo.ac.kr")
                     .name("사용자" + i)
                     .password(passwordEncoder.encode("1234")) // db에 인코딩된 패스워드 값이 들어감.
-                    .fromSocial(String.valueOf(false)) // 실제 소셜이 아니기때문에 false로 설정
+                    .fromSocial(false)// 실제 소셜이 아니기때문에 false로 설정
                     .build();
 
             clubMember.addMemberRole(ClubMemberRole.USER);
